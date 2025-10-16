@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets App</title>
+<link rel="stylesheet" href="fontawesome/fontawesome-free-6.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="../css/new.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#459dfcff">
+</head>
+<body>
+
+<div class="app">
+<!-- HEADER -->
+    <header class="navbar">
+        <i class="fas fa-times"></i>
+        <span class="title">My Tickets</span>
+        <span class="help">Help</span>
+    </header>
+  <!-- SCREEN 1 -->
+  <div class="screen active" id="screen1">
+    <div class="navbar">
+      <span><i data-lucide="calendar"></i> </span>
+      <span><i data-lucide="help-circle"></i></span>
+    </div>
+
+    <div class="tabs">
+      <div class="active">UPCOMING (1)</div>
+      <div>PAST (0)</div>
+    </div>
+
+    <div class="event-card" id="goToTickets">
+      <div class="event-image">
+        <img src="../image/screen 1.jpg" alt="Event" style="width:100%; height:240px; border-radius:8px; object-fit:cover;">
+      </div>
+      <div class="event-info" style="padding:10px; text-align:center;">
+        <p><i data-lucide="clock"></i></p>
+        <h3></h3>
+        <p><i data-lucide="map-pin"></i></p>
+      </div>
+    </div>
+      
+     <!-- Bottom Navigation -->
+    <footer class="bottom-nav">
+        <div><i class="fa fa-search" aria-hidden="true"></i><br>Discover</div>
+        <div><i class="fas fa-heart"></i><br>Favourites</div>
+        <div style="color: #2a39be;"><i class="fas fa-ticket-alt" style="color: #2a39be;"></i><br>My Tickets</div>
+        <div><i class="fas fa-dollar-sign"></i><br>Sell</div>
+        <div><i class="fas fa-user"></i><br>Account</div>
+    </footer>
+
+  </div>
+
+  <!-- END SCREEN 1 -->
+
+  
+  <!-- SCREEN 2 -->
+<div class="screen" id="screen2" style="display:none;">
+  <!-- TABS -->
+  <nav class="tabs">
+    <div class="tab active">MY TICKETS</div>
+    <div class="tab">ADD-ONS</div>
+  </nav>
+
+  <!-- TICKETS -->
+  <main class="ticket-container">
+    <div class="cards-wrapper">
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="ticket-top">
+          <h6 style="margin-left: -30px;">
+            <p>Official Platinum</p> 
+            <i class="fas fa-info-circle" style="margin-left: 270px; padding-top: 80px; font-size: 20px; margin-top: -90px;"></i><br/>
+          </h6>
+          <div class="ticket-info">
+            <span class="sec">
+              <strong><h5 style="margin-left: -210px; margin-top: 20px;">SEC</h5></strong><br/>
+             <h4 style="margin-left: -210px; margin-top: -15px;">332</h4>
+            </span>
+            <span class="type"><h5 style="margin-top: -45px; margin-left: -30px;">ROW</h5>
+              <strong><h3 style="margin-left: -30px;">6 </h3></strong>
+            </span>
+             <span class="type"><h5 style="margin-left: 170px; margin-top: -40px;">SEAT</h5>
+              <strong><h3 style="margin-left: 170px;">4</h3></strong>
+            </span>
+          </div>
+        </div>
+        <img src="image/screen 2.jpg" alt="Event" class="card-img" style="width: 110%;">
+        <div class="card-body">
+          <h4 class="ticket-type">GEN ADMISSION</h4>
+          <button class="view-ticket">
+            <span class="barcode"><i class="fa fa-barcode"></i></span> View Ticket
+          </button>
+          <p class="ticket-details" style="color: #2a39be;">Ticket Details</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="ticket-top">
+          <h6 style="margin-left: -30px;">
+            <p>Official Platinum</p> 
+            <i class="fas fa-info-circle" style="margin-left: 270px; padding-top: 80px; font-size: 20px; margin-top: -90px;"></i><br/>
+          </h6>
+          <div class="ticket-info">
+            <span class="sec">
+              <strong><h5 style="margin-left: -210px; margin-top: 20px;">SEC</h5></strong><br/>
+             <h4 style="margin-left: -210px; margin-top: -15px;">332</h4>
+            </span>
+            <span class="type"><h5 style="margin-top: -45px; margin-left: -30px;">ROW</h5>
+              <strong><h3 style="margin-left: -30px;">6 </h3></strong>
+            </span>
+             <span class="type"><h5 style="margin-left: 170px; margin-top: -40px;">SEAT</h5>
+              <strong><h3 style="margin-left: 170px;">5</h3></strong>
+            </span>
+          </div>
+        </div>
+        <img src="image/screen 2.jpg" alt="Event" class="card-img">
+        <div class="card-body">
+          <h4 class="ticket-type">GEN ADMISSION</h4>
+          <button class="view-ticket">
+            <span class="barcode"><i class="fa fa-barcode"></i></span> View Ticket
+          </button>
+          <p class="ticket-details" style="color: #2a39be;">Ticket Details</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="ticket-top">
+          <h6 style="margin-left: -30px;">
+            <p>Official Platinum</p> 
+            <i class="fas fa-info-circle" style="margin-left: 270px; padding-top: 80px; font-size: 20px; margin-top: -90px;"></i><br/>
+          </h6>
+          <div class="ticket-info">
+            <span class="sec">
+              <strong><h5 style="margin-left: -210px; margin-top: 20px;">SEC</h5></strong><br/>
+             <h4 style="margin-left: -210px; margin-top: -15px;">332</h4>
+            </span>
+            <span class="type"><h5 style="margin-top: -45px; margin-left: -30px;">ROW</h5>
+              <strong><h3 style="margin-left: -30px;">6 </h3></strong>
+            </span>
+             <span class="type"><h5 style="margin-left: 170px; margin-top: -40px;">SEAT</h5>
+              <strong><h3 style="margin-left: 170px;">6</h3></strong>
+            </span>
+          </div>
+        </div>
+        <img src="image/screen 2.jpg" alt="Event" class="card-img" >
+        <div class="card-body">
+          <h4 class="ticket-type">GEN ADMISSION</h4>
+          <button class="view-ticket">
+            <span class="barcode"><i class="fa fa-barcode"></i></span> View Ticket
+          </button>
+          <p class="ticket-details" style="color: #2a39be;">Ticket Details</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pagination Dots -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Transfer & Sell Buttons -->
+    <div class="action-buttons">
+  <button class="transfer-btn" style="text-align: right;">Transfer</button>
+  <button class="sell-btn">Sell</button>
+</div>
+
+    <!-- Map Section -->
+    <iframe
+  src="https://www.google.com/maps/place//@30.2669266,-97.7728283,15z?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+  width="100%"
+  height="350"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<!-- END SCREEN 2 -->
+
+
+
+  <!-- SCREEN 3 -->
+  <section class="transfer-container" id="transfer-section">
+    <div class="header">SELECT TICKETS TO TRANSFER</div>
+    <div class="info-box"><i class="fa fa-info"></i><p>Only transfer tickets to people you know <br>and trust to ensure everyone stays safe</p></div>
+    <hr>
+
+    <div class="ticket-header">
+      <div>Sec 332 , Row 6</div>
+      <div class="ticket-count"><i class="fa fa-ticket"></i> 3 tickets</div>
+    </div>
+
+    <div class="seat-container">
+      <div style="position:relative;">
+        <input type="checkbox" id="seat1" class="seat-input">
+        <label for="seat1" class="seat-card">
+          <div class="seat-top">SEAT</div>
+          <div class="seat-body"><div class="seat-dot"></div></div>
+        </label>
+      </div>
+
+      <div style="position:relative;">
+        <input type="checkbox" id="seat2" class="seat-input">
+        <label for="seat2" class="seat-card">
+          <div class="seat-top">SEAT</div>
+          <div class="seat-body"><div class="seat-dot"></div></div>
+        </label>
+      </div>
+
+      <div style="position:relative;">
+        <input type="checkbox" id="seat3" class="seat-input">
+        <label for="seat3" class="seat-card">
+          <div class="seat-top">SEAT</div>
+          <div class="seat-body"><div class="seat-dot"></div></div>
+        </label>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div id="selected-count" style="margin-top: 30px;">0 Selected</div>
+      <a href="#" class="transfer-link" style="margin-top: 30px;">TRANSFER TO &gt;</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- SCREEN 4: TRANSFER FORM -->
+<section class="transfer-form" id="screen4">
+  <div class="form-box">
+    <h3>TRANSFER TICKETS</h3>
+    <hr>
+    <p class="ticket-details" style="text-align: left;"> <br/>3 Tickets Selected<br/> <span>Sec <b>332 ,</b> Row <b>6 ,</b> Seat 4,5,6</span>
+    </p>
+
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" placeholder="First Name">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" placeholder="Last Name">
+
+      <label for="contact">Email or Mobile Number</label>
+      <input type="text" id="contact" placeholder="Email or Mobile Number">
+
+      <label for="note">Note</label>
+
+      <div class="form-actions">
+        <a href="#" class="back-btn" id="backToTransfer">&lt; BACK</a>
+        <button type="submit" class="submit-btn">TRANSFER 3 TICKETS</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="../js/script.js"> </script>
+
+<!-- ✅ Register the service worker -->
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("../service-worker.js")
+    .then(() => console.log("✅ Service Worker registered"))
+    .catch(err => console.log("❌ SW registration failed:", err));
+}
+</script>
+
+</body>
+</html>
